@@ -11,7 +11,7 @@
 <body style="text-align: center;">
     <div class="comments">
     {% for feedback in feedbacks %}
-        <strong>{{feedback.name}}, {{feedback.submissionDate|date}}</strong><br>
+        <strong>{{feedback.name}}, {{feedback.submissionDate|time_diff}}</strong><br>
         <p>{{feedback.message}}</p><br>
     {% endfor %}
     {{knp_pagination_render(feedbacks)}}

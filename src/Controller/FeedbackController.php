@@ -34,13 +34,13 @@ class FeedbackController extends AbstractController
             $feedbackData = $form->getData();
             $this->repository->createFeeback($feedbackData->name, $feedbackData->message);
 
-            return new Response("", 301, ["location" => "/"]);
+            return $this->redirectToRoute('app_feedback_index');
         }
 
         $feedbacks = $paginator->paginate(
             $this->repository->getFeedbacks(),
             $request->query->getInt('page', 1),
-            10  
+            5  
         );
 
         return new Response($this->renderView("feedbackForm.html.twig", ["feedbacks" => $feedbacks, "form" => $form->createView()]));
