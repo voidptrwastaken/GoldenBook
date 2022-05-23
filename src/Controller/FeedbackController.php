@@ -58,12 +58,4 @@ class FeedbackController extends AbstractController
 
         return new Response($this->renderView("feedbackForm.html.twig", ["feedbacks" => $feedbacks, "form" => $form->createView()]));
     }
-
-    /**
-     * @Route("/new", methods={"POST"})
-     */
-    public function new()
-    {
-        
-    }
 }
