@@ -3,6 +3,8 @@
 namespace App\Repository;
 
 use App\Model\Feedback;
+use Doctrine\DBAL\Connection;
+use Symfony\Config\DoctrineConfig;
 use PDO;
 
 class FeedbackRepository

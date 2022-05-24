@@ -9,6 +9,7 @@
 </head>
 
 <body style="text-align: center;">
+<h1>Golden book</h1>
     <div class="comments">
     {% for feedback in feedbacks %}
         <strong>{{feedback.name}}, {{feedback.submissionDate|time_diff}}</strong><br>
