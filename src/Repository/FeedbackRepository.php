@@ -4,8 +4,6 @@ namespace App\Repository;
 
 use App\Model\Feedback;
 use Doctrine\DBAL\Connection;
-use Doctrine\Persistence\ManagerRegistry;
-use PDO;
 
 
 // php bin/console doctrine:query:sql \
