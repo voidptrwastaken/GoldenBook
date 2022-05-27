@@ -56,6 +56,8 @@ class FeedbackController extends AbstractController
             5  
         );
 
+        $feedback = $this->repository->getFeedback(1);
+
         return new Response($this->renderView("feedbackForm.html.twig", ["feedbacks" => $feedbacks, "form" => $form->createView()]));
     }
 }
