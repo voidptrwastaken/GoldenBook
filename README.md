@@ -9,4 +9,6 @@
 - If you try `php bin/console doctrine:query:sql 'SELECT 1'` and it doesn't explode to your face then congratulations! 
 - You may now create a feedback table with `php bin/console doctrine:query:sql 'CREATE TABLE feedback (id SERIAL PRIMARY KEY, name TEXT, message TEXT, submissiondate SERIAL)'`
 - If everything went right, you can `php bin/console doctrine:query:sql 'SELECT * FROM feedback'` and see your magnificent yet empty table show up!
-- It's time for you to fill this table with absolutely garbage feedback that no one cares about! Head to http://localhost:8080/ and start clogging your database with messages on how bad your school is!! 
+- It's time for you to fill this table with absolutely garbage feedback that no one cares about! Head to http://localhost:8080/ and start clogging your database with messages on how bad your school is!!
+
+![me](https://cdn.discordapp.com/emojis/902173287369543721.png)
